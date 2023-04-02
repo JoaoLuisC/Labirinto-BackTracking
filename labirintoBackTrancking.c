@@ -43,8 +43,8 @@ void printLabirinto(char labirinto[MAX][MAX]){
        do{
 			lab[i][j] = 1;
 			   
-        	// ANDAR E CONFERIR SE É UMA SAIDA
-        	if(lab[i][j+1] == 'S' || lab[i][j+1] == '.' || lab[i][j+1] == 1 ){ //DIREITA
+        	// ANDAR E CONFERIR SE Ã‰ UMA SAIDA
+        	if(lab[i][j+1] == 'S' || lab[i][j+1] == '.'){ //DIREITA
         		if(lab[i][j+1] == 'S'){
 					atual.x = i;
 					atual.y = j+1;
@@ -56,7 +56,7 @@ void printLabirinto(char labirinto[MAX][MAX]){
 		        	push(&p1, atual);
 		        	j++;
 				}     		
-			}else if(lab[i+1][j] == 'S' || lab[i+1][j] == '.' || lab[i][j+1] == 1){ // BAIXO
+			}else if(lab[i+1][j] == 'S' || lab[i+1][j] == '.'){ // BAIXO
 				
 				if(lab[i+1][j] == 'S'){
 		    		atual.x = i+1;
@@ -70,7 +70,7 @@ void printLabirinto(char labirinto[MAX][MAX]){
 	        		i++;
 				}
 				
-			}else if(lab[i][j-1] == 'S' || lab[i][j-1] == '.' || lab[i][j+1] == 1){ // ESQUERDA
+			}else if(lab[i][j-1] == 'S' || lab[i][j-1] == '.'){ // ESQUERDA
 			
 				if(lab[i][j-1] == 'S'){
 		    		atual.x = i;
@@ -84,7 +84,7 @@ void printLabirinto(char labirinto[MAX][MAX]){
 	        		j--;
 				}
 				
-			}else if(lab[i-1][j] == 'S' || lab[i-1][j] == '.' || lab[i][j+1] == 1){// CIMA
+			}else if(lab[i-1][j] == 'S' || lab[i-1][j] == '.'){// CIMA
 			
 				if(lab[i-1][j] == 'S'){
 		    		atual.x = i-1;
