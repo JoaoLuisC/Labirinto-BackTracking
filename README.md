@@ -8,8 +8,6 @@
 </p>
 <br>
 
-<img source="https://user-images.githubusercontent.com/103074041/229315849-0f8c8fdd-8783-4b0a-b61c-f55929f3409a.png">
-
 ![imgLabirinto](https://user-images.githubusercontent.com/103074041/229315849-0f8c8fdd-8783-4b0a-b61c-f55929f3409a.png)
 
 <h1><b>Requisitos: </b></h1>
